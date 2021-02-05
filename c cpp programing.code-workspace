@@ -1,7 +1,308 @@
-{
-    "folders": [
-        {
-            "path": "c c++"
-        }
-    ]
-}
+// #include <stdio.h>
+// int main(void){
+// int sec, h,m,s;
+// printf("Enter the value in sec:-");
+// scanf("%d",&sec);
+// h= sec/3600;
+// m = (sec%3600)/60;
+// s = (sec%3600)%60;
+// printf("H: %d M:%d S: %d\n",h,m,s);
+
+// }
+
+// //Write a C program that read 5 numbers and sum of all odd values between them.
+// #include <stdio.h>
+// int main()
+// {
+//     int j, num[5], total = 0;
+//     printf("Enter all 5 numbers :- ");
+//     scanf("%d%d%d%d%d", &num[0], &num[1], &num[2], &num[3], &num[4]);
+
+//     for (j = 0; j < 5; j++)
+//     {
+//         if ((num[j] % 2) != 0)
+//         {
+//             total += num[j];
+//         }
+//     }
+//     printf("sum of totale is %d", total);
+//     return 0;
+//}
+
+//capital to small and small to capital conversion
+
+// #include <stdio.h>
+// int main()
+// {
+//     char ch;
+//     printf("Enter any charachtor\n");
+//     scanf("%c",&ch);
+
+//     if (ch >= 65 && ch <= 90)
+//     {
+//         ch += 32;
+//         printf("small latter is :-%c", ch);
+//     }
+//     else
+//     {
+//         if (ch >= 97 && ch <= 122)
+//         {
+//             ch -= 32;
+//             printf("capital latter is :- %c", ch);
+//         }
+//         else
+//         {
+//             printf("please Enter valid latter");
+//         }
+
+//         return 0;
+//     }
+// }
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int age;
+
+//     printf("Enter your Age\n");
+//     scanf("%d", &age);
+
+//     printf("You Have Enter %d as your age\n",age );
+
+//     if (age > 18)
+
+//     {
+//         printf("You can vote");
+//     }
+
+//     else if (age > 10)
+//     {
+//         printf("you are teen agerr");
+//     }
+
+//     else if (age <= 5)
+//     {
+//         printf("you can vote for babyes");
+//     }
+//     return 0;
+// }
+    
+ 
+
+// CALCULATER Switch syntax
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int cal_name;
+//     float num1,result;
+
+// printf("press 1 for Kilometer to mil.\n");
+// printf("press 2 for inches to feet press. \n");
+// printf("press 3 for centimete to inches press.\n");
+// printf("press 4 for pound to kilogram press.\n");
+// scanf("%d", &cal_name);
+
+
+// switch (cal_name)
+// {
+//  case 1:
+//  printf("Enter value in Km :\n");
+//  scanf("%f",&num1);
+//  result = num1 * 0.621571;
+//  printf("%f",result);
+//  break;
+
+
+// case 2:
+//     printf("Enter value in Inches :\n");
+//     scanf("%f",&num1);
+//     result = num1 / 12;
+//     printf("%f Inches is converted into %f feet",num1,result);
+//     break;
+
+// case 3:
+//     printf("Enter value in centimeter:\n");
+//     scanf("%f",&num1);
+//     result = num1 * 0.393701;
+//     printf("%f",result);
+//     break;
+
+// case 4:
+//     printf("Enter value in Pound :\n");
+//     scanf("%f",&num1);
+//     result = num1 * 0.453592;
+//     printf("%f",result);
+//     break;
+
+
+// default:
+// printf("Please Enter the valid number");
+//     break;
+// }
+
+//     return 0;
+// }
+
+// //program using for loop
+
+// #include<stdio.h>
+
+// int main()
+// {
+//  int num,count,sum=0;
+//  printf("Enter the natural Number\n");
+//  scanf("%d",  &num);
+
+//  for (count=1; count<=num; ++count)
+//  {
+//      sum +=count;
+    
+//  }
+//   printf("sum of First %d natural Number is %d",num,sum);
+//     return 0;
+// }
+
+
+// //padha
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int i,num=0;
+//     printf("enter any Number\n");
+//     scanf("%d",&num);
+
+// for (i = 1; i <= 10; i++)
+// {
+//   printf("%d\n", (num*i));
+// }
+
+//     return 0; 
+    
+
+// // do while loop
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int num, index = 1;
+
+//     printf("Enter a number \n");
+//     scanf("%d",&num);
+//     do
+//     {
+//         printf("%d\n",index);
+//         index += 1;
+//     } while (index <num);
+
+//     return 0;
+// }
+
+
+// //while loop 
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int i =0;
+
+//     while (i<54)
+//     {
+//        printf("%d\n", i);
+//        i+=1; //i= i+1
+//     }
+    
+//     return 0;
+// }
+
+
+// // Functions
+
+
+// #include <stdio.h>
+// void add();
+
+// int main(void)
+// {
+
+//     add();
+
+//     return 0;
+// }
+
+// void add()
+// {
+
+//     int sum, a, b;
+//     printf("Enter the two values a \n");
+//     scanf("%d%d", &a, &b);
+//     sum = a + b;
+//     printf("The sum of a and b is %d", sum);
+// }
+
+
+// // Perimeter and Area of rectangle
+
+// #include <stdio.h>
+// int main()
+// {
+// int height,width,area,perimeter;
+
+
+// printf("Enter Height and width \n");
+// scanf("%d%d",&height,&width);
+
+// area = height*width;
+// perimeter= 2*(height+width);
+// printf("Perimeter of the rectangle is %d inchaes \nand area of the rectangle is %d square inches",perimeter,area);                      
+
+//   return 0;
+// }
+
+
+// //Write a C program to convert specified days into years, weeks and days.
+
+// #include <stdio.h>
+// int main()
+// {
+//   int days,week,years;
+
+//   days = 2564;
+
+//   years = (days/365);
+//   week = (days%365)/7;
+//   days = (days%365)%7;
+ 
+// printf("\n%d\n%d\n%d",years,week,days);
+ 
+ 
+
+//   return 0;
+// }
+
+
+// //second to hour and minutes convertion
+
+// #include <stdio.h>
+// int main(void){
+// int sec, h,m,s;
+// printf("Enter the value in sec:-");
+// scanf("%d",&sec);
+// h= sec/3600;
+// m = (sec%3600)/60;
+// s = (sec%3600)%60;
+// printf("H: %d M:%d S: %d\n",h,m,s);
+
+    
+// }
+
+
+
